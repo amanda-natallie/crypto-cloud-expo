@@ -24,7 +24,9 @@ function App() {
 
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-
+        {/* Exemplos de uso dos componentes
+            Novos componentes devem ser fortemente tipados
+        */}
         <Typography as="h1" fontFamily="'Press Start 2P'" fontSize="64px">
           Crypto Cloud Expo
         </Typography>
