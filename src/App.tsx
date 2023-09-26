@@ -1,6 +1,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { GlobalStyles, theme } from './theme'
 import { ThemeProvider } from 'styled-components'
+import { Button, Typography, Flexbox } from './components'
 
 function App() {
   return (
@@ -24,7 +25,14 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
 
-        <h1>oi</h1>
+        <Typography as="h1" fontFamily="'Press Start 2P'" fontSize="64px">
+          Crypto Cloud Expo
+        </Typography>
+        <Typography as="h2" color={theme.colors.white} weight={600} fontSize="48px">
+          Identifying the Game Changing Trends in the WEB 3.0 Ecossystem
+        </Typography>
+        <Button>Register Now</Button>
+        <Flexbox width="80px"></Flexbox>
       </ThemeProvider>
     </HelmetProvider>
   )
