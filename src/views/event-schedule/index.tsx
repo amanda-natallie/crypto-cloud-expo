@@ -1,35 +1,20 @@
-import {
-  Container,
-  Flexbox,
-  SectionHeader,
-  StyledGradientText,
-  Typography,
-} from 'components'
+import { Container, SectionHeader, StyledGradientText, Typography } from 'components'
+import scheduleMock from 'mockups/schedule.json'
+import Flip from 'react-reveal/Flip'
+import { theme } from 'theme'
 import {
   StyledEventBlock,
   StyledEventBlockContent,
   StyledEventBlockImage,
   StyledEventScheduleWrapper,
+  StyledTopicsWrapper,
 } from './styles'
-import scheduleMock from 'mockups/schedule.json'
-import { theme } from 'theme'
-import Flip from 'react-reveal/Flip'
 const EventSchedule = () => {
   return (
     <StyledEventScheduleWrapper>
       <SectionHeader smallTitle="Our Agenda" title="Event Agenda and Schedule" />
       <Container>
-        <Flexbox
-          gap="30px"
-          fullWidth
-          flexDirection="row"
-          customStyles={{
-            marginTop: '32px',
-            '& > div': {
-              width: 'calc(50% - 15px)',
-            },
-          }}
-        >
+        <StyledTopicsWrapper>
           {scheduleMock.map((schedule, index) => (
             <Flip left delay={150 * index} key={index}>
               <StyledEventBlock flexDirection="row">
@@ -52,7 +37,7 @@ const EventSchedule = () => {
               </StyledEventBlock>
             </Flip>
           ))}
-        </Flexbox>
+        </StyledTopicsWrapper>
       </Container>
     </StyledEventScheduleWrapper>
   )

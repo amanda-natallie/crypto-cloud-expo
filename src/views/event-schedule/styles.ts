@@ -4,6 +4,26 @@ import styled from 'styled-components'
 export const StyledEventScheduleWrapper = styled(Flexbox)`
   padding-block: 100px;
 `
+
+export const StyledTopicsWrapper = styled(Flexbox)`
+  width: 100%;
+  margin-top: 32px;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+
+  & > div {
+    width: calc(50% - 15px);
+
+    @media (max-width: 1033px) {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      height: 135px;
+    }
+  }
+`
+
 export const StyledEventBlock = styled(Flexbox)`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.white};
