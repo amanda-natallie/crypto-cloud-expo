@@ -26,7 +26,12 @@ const AboutUs = () => {
   const is1024 = useMediaQuery('(max-width: 1304px)')
 
   return (
-    <StyledAboutUsWrapper fullWidth alignItems="center" justifyContent="center">
+    <StyledAboutUsWrapper
+      fullWidth
+      alignItems="center"
+      justifyContent="center"
+      id="about"
+    >
       <Container>
         {!is1024 && (
           <Flexbox width="45%">

@@ -19,17 +19,20 @@ const EventSchedule = () => {
     <StyledEventScheduleWrapper>
       <SectionHeader smallTitle="Our Agenda" title="Event Agenda and Schedule" />
       <Container>
-        <Flip top cascade>
-          <Flexbox
-            gap="30px"
-            fullWidth
-            flexDirection="row"
-            customStyles={{
-              marginTop: '32px',
-            }}
-          >
-            {scheduleMock.map((schedule, index) => (
-              <StyledEventBlock key={index} flexDirection="row">
+        <Flexbox
+          gap="30px"
+          fullWidth
+          flexDirection="row"
+          customStyles={{
+            marginTop: '32px',
+            '& > div': {
+              width: 'calc(50% - 15px)',
+            },
+          }}
+        >
+          {scheduleMock.map((schedule, index) => (
+            <Flip left delay={150 * index} key={index}>
+              <StyledEventBlock flexDirection="row">
                 <StyledEventBlockImage
                   style={{ backgroundImage: `url(${schedule.image})` }}
                 />
@@ -47,9 +50,9 @@ const EventSchedule = () => {
                   </Typography>
                 </StyledEventBlockContent>
               </StyledEventBlock>
-            ))}
-          </Flexbox>
-        </Flip>
+            </Flip>
+          ))}
+        </Flexbox>
       </Container>
     </StyledEventScheduleWrapper>
   )

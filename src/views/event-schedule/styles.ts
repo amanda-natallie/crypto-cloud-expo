@@ -5,7 +5,7 @@ export const StyledEventScheduleWrapper = styled(Flexbox)`
   padding-block: 100px;
 `
 export const StyledEventBlock = styled(Flexbox)`
-  width: calc(50% - 15px);
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 10px;
   height: 115px;
