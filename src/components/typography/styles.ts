@@ -39,6 +39,10 @@ export const StyledTypography = styled.p<TypographyProps>`
       margin-right: ${gutterHorizontal ? gutter : 0}px;
       font-weight: ${weight ?? 400};
       ${cssProps ? { ...cssProps } : null}
+
+      & .react-reveal span, & .react-reveal p {
+        ${cssProps ? { ...cssProps } : null}
+      }
     `
   }}
 `

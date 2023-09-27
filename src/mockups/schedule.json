@@ -3,72 +3,72 @@
     "id": 1,
     "hostedBy": "Sunny Lu",
     "title": "WHAT WEB 3.0 MEANS FOR ENTERPRISES",
-    "image": "assets/schedule/1.jpeg"
+    "image": "./src/assets/schedule/1.jpeg"
   },
   {
     "id": 2,
     "hostedBy": "Gracy Chen",
     "title": "VALUE CREATION IN THE METAVERSE",
-    "image": "assets/schedule/2.jpeg"
+    "image": "./src/assets/schedule/2.jpeg"
   },
   {
     "id": 3,
     "hostedBy": "Nena Dokuzov & Jean Charles Gaudechon",
     "title": "THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM",
-    "image": "assets/schedule/3.jpeg"
+    "image": "./src/assets/schedule/3.jpeg"
   },
   {
     "id": 4,
     "hostedBy": "Max Kordek",
     "title": "DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS",
-    "image": "assets/schedule/4.jpeg"
+    "image": "./src/assets/schedule/4.jpeg"
   },
   {
     "id": 5,
     "hostedBy": "Helen Hai",
     "title": "MAXIMIZING ESG IMPACT WITH BLOCKCHAIN",
-    "image": "assets/schedule/5.jpeg"
+    "image": "./src/assets/schedule/5.jpeg"
   },
   {
     "id": 6,
     "hostedBy": "Jason Allegrante",
     "title": "BRIDGING DEFI AND CEFI",
-    "image": "assets/schedule/6.jpeg"
+    "image": "./src/assets/schedule/6.jpeg"
   },
   {
     "id": 7,
     "hostedBy": "Sunny Lu",
     "title": "WEB 3 GAMING: THE NEW FRONTIER?",
-    "image": "assets/schedule/7.jpeg"
+    "image": "./src/assets/schedule/7.jpeg"
   },
   {
     "id": 8,
     "hostedBy": "Reece Merrick",
     "title": "DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS",
-    "image": "assets/schedule/8.jpeg"
+    "image": "./src/assets/schedule/8.jpeg"
   },
   {
     "id": 9,
     "hostedBy": "Mohammed Alblooshi",
     "title": "CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS",
-    "image": "assets/schedule/9.jpeg"
+    "image": "./src/assets/schedule/9.jpeg"
   },
   {
     "id": 10,
     "hostedBy": "Sunny Lu",
     "title": "WEB 3: THE FUTURE IS HERE AND NOW",
-    "image": "assets/schedule/10.jpeg"
+    "image": "./src/assets/schedule/10.jpeg"
   },
   {
     "id": 11,
     "hostedBy": "Alex Zinder & Nicole Purin",
     "title": "NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES",
-    "image": "assets/schedule/11.jpeg"
+    "image": "./src/assets/schedule/11.jpeg"
   },
   {
     "id": 12,
     "hostedBy": "Dina Sam'an",
     "title": "INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES",
-    "image": "assets/schedule/12.jpeg"
+    "image": "./src/assets/schedule/12.jpeg"
   }
 ]

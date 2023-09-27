@@ -1,3 +1,7 @@
 export * from './typography'
 export * from './button'
 export * from './flexbox'
+export * from './header'
+export { default as Container } from './container'
+export { default as StyledGradientText } from './gradient-text'
+export { default as SectionHeader } from './section-header'
