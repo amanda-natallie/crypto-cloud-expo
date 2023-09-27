@@ -7,7 +7,7 @@ import {
   Typography,
 } from 'components'
 import scheduleMock from 'mockups/schedule.json'
-import Flip from 'react-reveal/Flip'
+import Fade from 'react-reveal/Fade'
 import { theme } from 'theme'
 import {
   StyledEventBlock,
@@ -25,7 +25,7 @@ const EventSchedule = () => {
         <Container>
           <StyledTopicsWrapper>
             {scheduleMock.map((schedule, index) => (
-              <Flip left delay={150 * index} key={index}>
+              <Fade top delay={10 * index} key={index}>
                 <TiltComponent>
                   <StyledEventBlock flexDirection="row">
                     <StyledEventBlockImage
@@ -46,7 +46,7 @@ const EventSchedule = () => {
                     </StyledEventBlockContent>
                   </StyledEventBlock>
                 </TiltComponent>
-              </Flip>
+              </Fade>
             ))}
           </StyledTopicsWrapper>
         </Container>
