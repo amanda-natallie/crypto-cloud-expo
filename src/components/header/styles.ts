@@ -117,7 +117,7 @@ export const StyledMenu = styled(Flexbox)<BurguerProps>`
     return css`
       background: ${darkBackground};
       transform: ${open ? 'translateX(0)' : 'translateX(100%)'};
-      height: 100vh;
+      height: 100%;
       width: 100vw;
       text-align: left;
       position: fixed;

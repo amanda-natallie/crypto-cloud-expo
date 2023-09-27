@@ -1,8 +1,8 @@
+import { ApplicationHeader } from 'components'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider } from 'styled-components'
 import PageIndex from 'views'
 import { GlobalStyles, theme } from './theme'
-import { ApplicationHeader } from 'components'
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
 
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+
         <ApplicationHeader />
         <PageIndex />
       </ThemeProvider>

@@ -1,5 +1,5 @@
 import { Typography } from 'components'
-import { StyledCounterBlock, StyledCounterWrapper } from '../styles'
+import { StyledCounterBlock, StyledCounterWrapper, StyledGradientText } from '../styles'
 import { useState, useEffect } from 'react'
 import { getCountdown } from 'utils'
 
@@ -20,19 +20,19 @@ const Counter = () => {
     <StyledCounterWrapper>
       <StyledCounterBlock>
         <Typography as="p">{days}</Typography>
-        <Typography as="span">Days</Typography>
+        <StyledGradientText>Days</StyledGradientText>
       </StyledCounterBlock>
       <StyledCounterBlock>
         <Typography as="p">{hours}</Typography>
-        <Typography as="span">Hours</Typography>
+        <StyledGradientText>Hours</StyledGradientText>
       </StyledCounterBlock>
       <StyledCounterBlock>
         <Typography as="p">{minutes}</Typography>
-        <Typography as="span">Minutes</Typography>
+        <StyledGradientText>Minutes</StyledGradientText>
       </StyledCounterBlock>
       <StyledCounterBlock>
         <Typography as="p">{seconds}</Typography>
-        <Typography as="span">Seconds</Typography>
+        <StyledGradientText>Seconds</StyledGradientText>
       </StyledCounterBlock>
     </StyledCounterWrapper>
   )

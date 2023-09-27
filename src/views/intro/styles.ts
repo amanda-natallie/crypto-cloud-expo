@@ -1,5 +1,5 @@
 import introBg from 'assets/backgrounds/intro-bg.png'
-import { Flexbox, FlexboxProps } from 'components'
+import { Flexbox, FlexboxProps, Typography } from 'components'
 import styled from 'styled-components'
 import counterShape from 'assets/shapes/counter-arrow.svg'
 
@@ -11,6 +11,17 @@ export const StyledIntroWrapper = styled(Flexbox)<FlexboxProps>`
   background-attachment: fixed;
   position: absolute;
   top: 0;
+
+  @media (min-width: 1025px) {
+    padding-top: 10vh;
+  }
+`
+
+export const StyledGradientText = styled(Typography)`
+  background: ${({ theme }) => theme.gradients[100]};
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 export const StyledCounterWrapper = styled(Flexbox)`
@@ -47,13 +58,9 @@ export const StyledCounterBlock = styled(Flexbox)`
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white};
   }
-  & > span {
+  & > ${StyledGradientText} {
     font-size: 16.5px;
     font-weight: 300;
-    background: ${({ theme }) => theme.gradients[100]};
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 768px) {

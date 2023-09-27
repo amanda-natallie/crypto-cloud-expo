@@ -5,7 +5,12 @@ const PageIndex = () => {
   return (
     <>
       <Intro />
-      <Flexbox fullWidth height="1000vh" alignItems="center" justifyContent="center">
+      <Flexbox
+        fullWidth
+        alignItems="center"
+        justifyContent="center"
+        customStyles={{ marginTop: '100vh' }}
+      >
         <h1>Content</h1>
       </Flexbox>
     </>
