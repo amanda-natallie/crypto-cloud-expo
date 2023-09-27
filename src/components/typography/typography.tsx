@@ -1,11 +1,11 @@
 import { FC } from 'react'
 import { CSSProperties } from 'styled-components'
 import { StyledTypography } from './styles'
+import { ComponentProps } from 'components/types'
 
-export type TypographyProps = React.HTMLAttributes<HTMLElement> & {
+export type TypographyProps = ComponentProps & {
   [key in keyof CSSProperties]: string | number
 } & {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
   children: React.ReactNode
   gutterBottom?: string
   gutterTop?: string

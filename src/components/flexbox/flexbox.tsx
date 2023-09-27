@@ -1,11 +1,22 @@
-import { forwardRef, Ref } from 'react'
+import { Ref, forwardRef } from 'react'
 import { StyledFlexbox } from './styles'
 import { FlexboxProps } from './types'
 
 export const Flexbox = forwardRef(
   (props: FlexboxProps, ref: Ref<HTMLDivElement>): JSX.Element => {
-    const { children, ...rest } = props
-    return <StyledFlexbox {...{ ref, ...rest }}>{children}</StyledFlexbox>
+    const {
+      children,
+      as = 'div',
+      alignItems = 'center',
+      justifyContent = 'flex-start',
+      flexDirection = 'column',
+      ...rest
+    } = props
+    return (
+      <StyledFlexbox {...{ as, alignItems, justifyContent, flexDirection, ref, ...rest }}>
+        {children}
+      </StyledFlexbox>
+    )
   },
 )
 
