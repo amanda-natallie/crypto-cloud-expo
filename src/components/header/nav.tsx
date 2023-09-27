@@ -3,7 +3,7 @@ import { useMediaQuery } from 'hooks'
 import { useState } from 'react'
 import { theme } from 'theme'
 import { handleScrollIntoView } from 'utils'
-import { StyledBurger, StyledDesktopMenu, StyledMenu } from '../styles'
+import { StyledBurger, StyledDesktopMenu, StyledMenu } from './styles'
 
 type NavItemProps = {
   text: string

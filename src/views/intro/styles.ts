@@ -1,176 +1,82 @@
 import introBg from 'assets/backgrounds/intro-bg.png'
 import { Flexbox, FlexboxProps } from 'components'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import counterShape from 'assets/shapes/counter-arrow.svg'
 
 export const StyledIntroWrapper = styled(Flexbox)<FlexboxProps>`
   background-image: url(${introBg});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+`
+
+export const StyledCounterWrapper = styled(Flexbox)`
+  flex-direction: row;
   position: relative;
-  height: 100vh;
-  margin-top: -125px;
-`
-type CustomHeaderProps = FlexboxProps & { scrollPosition: number }
-export const StyledHeaderWrapper = styled(Flexbox)<CustomHeaderProps>`
-  ${({ theme, scrollPosition }) => {
-    const scroll = scrollPosition > 32
-    return css`
-      z-index: 100;
-      position: sticky;
-      transition: all 0.6s ease-in-out;
-      padding: ${scroll ? '24px' : '32px'};
-      & > * {
-        transition: all 0.6s ease-in-out;
-      }
-      img {
-        width: ${scroll ? '18vw' : '25vw'};
-      }
-      button[aria-label='header-register-button'] {
-        padding: ${scroll ? '10px 32px' : '18px 48px'};
-      }
-      top: ${scroll ? '0' : '16px'};
+  margin-block: 32px;
+  background: url(${counterShape}) left center no-repeat;
+  background-size: 11px 66px;
+  padding-inline: 26px;
+  gap: 5px;
 
-      @media (max-width: 1024px) {
-        button[aria-label='header-register-button'] {
-          display: none;
-        }
-      }
-
-      @media (max-width: 768px) {
-        img {
-          width: 40vw;
-        }
-      }
-      &:after {
-        transition: all 0.6s ease-in-out;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 93px;
-        background: ${theme.gradients[400]};
-        z-index: -1;
-        opacity: ${scrollPosition > 100 ? 0.95 : 0};
-      }
-    `
-  }}
-`
-
-export const StyledDesktopMenu = styled.nav`
-  ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-top: 6px;
-
-    a {
-      display: inline-block;
-      text-decoration: none;
-      &:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: 'transparent';
-        border-radius: 4px;
-        margin-top: 4px;
-      }
-
-      &:hover {
-        color: ${theme.primary.main};
-        &:after {
-          background: ${theme.gradients[100]};
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      display: none;
-    }
-  `}
-`
-
-type BurguerProps = {
-  open: boolean
-}
-export const StyledBurger = styled.button<BurguerProps>`
-  ${({ theme, open }) => css`
+  &:before {
+    content: '';
     position: absolute;
-    top: 27px;
-    right: 27px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-
-    &:focus {
-      outline: none;
-    }
-
-    div {
-      width: 2rem;
-      height: 0.25rem;
-      background: ${theme.colors.white};
-      border-radius: 10px;
-      transition: all 0.3s linear;
-      position: relative;
-      transform-origin: 1px;
-
-      :first-child {
-        transform: ${open ? 'rotate(45deg)' : 'rotate(0)'};
-      }
-
-      :nth-child(2) {
-        opacity: ${open ? '0' : '1'};
-        transform: ${open ? 'translateX(20px)' : 'translateX(0)'};
-      }
-
-      :nth-child(3) {
-        transform: ${open ? 'rotate(-45deg)' : 'rotate(0)'};
-      }
-    }
-  `}
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: inherit;
+    transform: scaleX(-1);
+    right: 0px;
+  }
 `
-export const StyledMenu = styled(Flexbox)<BurguerProps>`
-  ${({ theme, open }) => {
-    const {
-      colors: { white, darkBackground },
-      primary: { main },
-    } = theme
-    return css`
-      background: ${darkBackground};
-      transform: ${open ? 'translateX(0)' : 'translateX(100%)'};
-      height: 100vh;
-      width: 100vw;
-      text-align: left;
-      position: fixed;
-      padding-inline: 2rem;
-      top: 0;
-      right: 0;
-      transition: transform 0.3s ease-in-out;
+export const StyledCounterBlock = styled(Flexbox)`
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: ${({ theme }) => theme.gradients[200]};
+  width: 126px;
+  height: 94px;
 
-      a {
-        text-transform: uppercase;
-        padding: 2rem 0;
-        font-weight: bold;
-        letter-spacing: 0.5rem;
-        color: ${white};
-        text-decoration: none;
-        transition: color 0.3s linear;
-        font-size: 1.5rem;
-        text-align: center;
+  & > p {
+    font-size: 32px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.colors.white};
+  }
+  & > span {
+    font-size: 16.5px;
+    font-weight: 300;
+    background: ${({ theme }) => theme.gradients[100]};
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-        &:hover {
-          color: ${main};
-        }
-      }
-    `
-  }}
+  @media (max-width: 768px) {
+    width: 96px;
+    height: 72px;
+
+    & > p {
+      font-size: 24px;
+    }
+    & > span {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 76px;
+    height: 57px;
+
+    & > p {
+      font-size: 18px;
+    }
+    & > span {
+      font-size: 9px;
+    }
+  }
 `

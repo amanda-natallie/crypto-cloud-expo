@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider } from 'styled-components'
 import PageIndex from 'views'
 import { GlobalStyles, theme } from './theme'
-import ApplicationHeader from 'views/intro/components/header'
+import { ApplicationHeader } from 'components'
 
 function App() {
   return (

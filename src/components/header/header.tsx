@@ -1,8 +1,8 @@
 import logo from 'assets/images/brand.svg'
 import { Button } from 'components'
-import { StyledHeaderWrapper } from '../styles'
-import Nav from './nav'
 import { useEffect, useState } from 'react'
+import { StyledHeaderWrapper, StyledNavbarDesktopWrapper } from './styles'
+import Nav from './nav'
 
 const ApplicationHeader = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -28,7 +28,9 @@ const ApplicationHeader = () => {
       {...{ scrollPosition }}
     >
       <img src={logo} className="App-logo" alt="logo" />
-      <Nav />
+      <StyledNavbarDesktopWrapper>
+        <Nav />
+      </StyledNavbarDesktopWrapper>
       <Button aria-label="header-register-button" onClick={() => null}>
         Register Now
       </Button>

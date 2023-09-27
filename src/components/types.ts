@@ -5,6 +5,6 @@ export interface ComponentProps extends React.HTMLAttributes<HTMLElement> {
   content?: string
   as?: keyof JSX.IntrinsicElements
   className?: string
-  children?: JSX.Element | JSX.Element[] | string
+  children?: JSX.Element | JSX.Element[] | string | number
   customStyles?: CSSObject | FlattenSimpleInterpolation
 }
