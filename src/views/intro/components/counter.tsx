@@ -1,8 +1,7 @@
-import { Typography } from 'components'
+import { Typography, StyledGradientText } from 'components'
 import { StyledCounterBlock, StyledCounterWrapper } from '../styles'
 import { useState, useEffect } from 'react'
 import { getCountdown } from 'utils'
-import { StyledGradientText } from 'components/gradient-text'
 
 const Counter = () => {
   const [countdown, setCountdown] = useState(getCountdown())

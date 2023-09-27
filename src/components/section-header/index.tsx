@@ -1,7 +1,7 @@
 import favicon from 'assets/images/favicon.svg'
 import waves from 'assets/shapes/waves.svg'
 import { Flexbox, Typography } from 'components'
-import { StyledGradientText } from 'components/gradient-text'
+import { StyledGradientText } from 'components'
 import { theme } from 'theme'
 
 interface SectionHeaderProps {
@@ -27,6 +27,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
         weight={700}
         lineHeight="65px"
         color={theme.colors.white}
+        textAlign={align}
       >
         {title}
       </Typography>

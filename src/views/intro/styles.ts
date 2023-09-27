@@ -1,7 +1,7 @@
 import introBg from 'assets/backgrounds/intro-bg.png'
 import counterShape from 'assets/shapes/counter-arrow.svg'
-import { Flexbox, FlexboxProps } from 'components'
-import { StyledGradientText } from 'components/gradient-text'
+import { Flexbox, FlexboxProps, StyledGradientText } from 'components'
+
 import styled from 'styled-components'
 
 export const StyledIntroWrapper = styled(Flexbox)<FlexboxProps>`

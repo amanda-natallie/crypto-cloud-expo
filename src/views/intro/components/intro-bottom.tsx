@@ -1,6 +1,5 @@
 import mapMarker from 'assets/icons/map-marker.svg'
-import { Flexbox, Typography } from 'components'
-import { StyledGradientText } from 'components/gradient-text'
+import { Flexbox, StyledGradientText, Typography } from 'components'
 import { theme } from 'theme'
 
 const IntroBottom = () => {

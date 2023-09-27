@@ -10,6 +10,7 @@ export const StyledAboutUsWrapper = styled(Flexbox)`
   background-size: 90%;
   background-attachment: fixed;
   position: relative;
+  min-height: 75vh;
 
   @media (max-width: 1304px) {
     &:after {

@@ -1,9 +1,54 @@
-// reuse o componente de heading que você criou no AboutUs
-// crie um componente só para lidar com os boxes de topicos
-// a lista a ser mapeada se encontra em /mockups/schedule.json
+import {
+  Container,
+  Flexbox,
+  SectionHeader,
+  StyledGradientText,
+  Typography,
+} from 'components'
+import {
+  StyledEventBlock,
+  StyledEventBlockContent,
+  StyledEventBlockImage,
+  StyledEventScheduleWrapper,
+} from './styles'
+import scheduleMock from 'mockups/schedule.json'
+import { theme } from 'theme'
 
 const EventSchedule = () => {
-  return <div>EventSchedule</div>
+  return (
+    <StyledEventScheduleWrapper>
+      <SectionHeader smallTitle="Our Agenda" title="Event Agenda and Schedule" />
+      <Container>
+        <Flexbox
+          gap="30px"
+          fullWidth
+          flexDirection="row"
+          customStyles={{ marginTop: '32px' }}
+        >
+          {scheduleMock.map((schedule, index) => (
+            <StyledEventBlock key={index} flexDirection="row">
+              <StyledEventBlockImage
+                style={{ backgroundImage: `url(${schedule.image})` }}
+              />
+              <StyledEventBlockContent alignItems="flex-start">
+                <StyledGradientText as="span">
+                  Host: {schedule.hostedBy}
+                </StyledGradientText>
+                <Typography
+                  as="h5"
+                  color={theme.colors.black}
+                  fontSize="18px"
+                  weight={700}
+                >
+                  {schedule.title.toUpperCase()}
+                </Typography>
+              </StyledEventBlockContent>
+            </StyledEventBlock>
+          ))}
+        </Flexbox>
+      </Container>
+    </StyledEventScheduleWrapper>
+  )
 }
 
 export default EventSchedule

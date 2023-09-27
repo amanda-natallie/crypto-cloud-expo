@@ -1,8 +1,13 @@
 import imgAboutUs from 'assets/images/about-us.png'
 import calendar from 'assets/icons/calendar-gradient.svg'
 import mapMarker from 'assets/icons/map-marker-gradient.svg'
-import { Flexbox, Typography, TypographyProps } from 'components'
-import SectionHeader from 'components/section-header'
+import {
+  SectionHeader,
+  Container,
+  Flexbox,
+  Typography,
+  TypographyProps,
+} from 'components'
 import { StyledAboutUsWrapper } from './styles'
 import { useMediaQuery } from 'hooks'
 
@@ -21,8 +26,8 @@ const AboutUs = () => {
   const is1024 = useMediaQuery('(max-width: 1304px)')
 
   return (
-    <StyledAboutUsWrapper fullWidth height="75vh">
-      <Flexbox width="90vw" flexDirection="row" alignItems="center" fullHeight>
+    <StyledAboutUsWrapper fullWidth alignItems="center" justifyContent="center">
+      <Container>
         {!is1024 && (
           <Flexbox width="45%">
             <img src={imgAboutUs} alt="about us" className="three-imgs" />
@@ -81,7 +86,7 @@ const AboutUs = () => {
             </Flexbox>
           </Flexbox>
         </Flexbox>
-      </Flexbox>
+      </Container>
     </StyledAboutUsWrapper>
   )
 }
