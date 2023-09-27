@@ -4,7 +4,7 @@
 // o menu é de scroll. Quando chegar no final da página, o menu fica fixo no topo
 
 const Intro = () => {
-  return <div>Intro</div>
+  return <div>intro</div>
 }
 
 export default Intro

@@ -2,6 +2,9 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { GlobalStyles, theme } from './theme'
 import { ThemeProvider } from 'styled-components'
 import { Button, Typography, Flexbox } from './components'
+import Intro from 'views/intro'
+import Footer from 'views/footer'
+import EventSponsors from 'views/event-sponsors'
 
 function App() {
   return (
@@ -27,13 +30,13 @@ function App() {
         {/* Exemplos de uso dos componentes
             Novos componentes devem ser fortemente tipados
         */}
-        <Typography as="h1" fontFamily="'Press Start 2P'" fontSize="64px">
-          Crypto Cloud Expo
-        </Typography>
+        <Intro />
         <Typography as="h2" color={theme.colors.white} weight={600} fontSize="48px">
           Identifying the Game Changing Trends in the WEB 3.0 Ecossystem
         </Typography>
         <Button>Register Now</Button>
+        <EventSponsors />
+        <Footer />
         <Flexbox width="80px"></Flexbox>
       </ThemeProvider>
     </HelmetProvider>
