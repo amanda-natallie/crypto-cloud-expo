@@ -1,7 +1,10 @@
 import { Flexbox } from 'components'
 import Intro from './intro'
+import AboutUs from './about-us'
+import { useMediaQuery } from 'hooks'
 
 const PageIndex = () => {
+  const is1024 = useMediaQuery('(max-width: 1024px)')
   return (
     <>
       <Intro />
@@ -9,9 +12,9 @@ const PageIndex = () => {
         fullWidth
         alignItems="center"
         justifyContent="center"
-        customStyles={{ marginTop: '100vh' }}
+        customStyles={{ marginTop: is1024 ? '92.7vh' : '90.9vh' }}
       >
-        <h1>Content</h1>
+        <AboutUs />
       </Flexbox>
     </>
   )

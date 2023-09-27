@@ -21,7 +21,7 @@ export default createGlobalStyle`
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    color: ${palette.primary.main};
+    color: ${palette.colors.white};
     background: ${palette.colors.darkBackground};
     font-family: 'Rubik', sans-serif;
     font-size: 16px;

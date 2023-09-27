@@ -13,6 +13,7 @@ const IntroText = () => {
         fontSize={isMobile ? '50px' : isSmallDesktop ? '55px' : '64px'}
         textAlign="center"
         lineHeight={isMobile ? '70px' : '98px'}
+        color={theme.primary.main}
       >
         Crypto Cloud Expo
       </Typography>

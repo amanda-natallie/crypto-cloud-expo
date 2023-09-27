@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { CSSObject, FlattenSimpleInterpolation } from 'styled-components'
 
 export interface ComponentProps extends React.HTMLAttributes<HTMLElement> {
@@ -5,6 +6,6 @@ export interface ComponentProps extends React.HTMLAttributes<HTMLElement> {
   content?: string
   as?: keyof JSX.IntrinsicElements
   className?: string
-  children?: JSX.Element | JSX.Element[] | string | number
+  children?: JSX.Element | JSX.Element[] | string | number | ReactNode
   customStyles?: CSSObject | FlattenSimpleInterpolation
 }
