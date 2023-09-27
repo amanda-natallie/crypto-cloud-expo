@@ -7,6 +7,7 @@ import {
   Flexbox,
   Typography,
   TypographyProps,
+  TiltComponent,
 } from 'components'
 import { StyledAboutUsWrapper } from './styles'
 import { useMediaQuery } from 'hooks'
@@ -35,7 +36,9 @@ const AboutUs = () => {
       <Container>
         {!is1024 && (
           <Flexbox width="45%">
-            <img src={imgAboutUs} alt="about us" className="three-imgs" />
+            <TiltComponent>
+              <img src={imgAboutUs} alt="about us" className="three-imgs" />
+            </TiltComponent>
           </Flexbox>
         )}
         <Flexbox
@@ -71,19 +74,24 @@ const AboutUs = () => {
               alignItems="center"
               justifyContent="flex-start"
             >
-              <img src={calendar} alt="calendar" />
+              <TiltComponent>
+                <img src={calendar} alt="calendar" />
+              </TiltComponent>
               <Flexbox alignItems="flex-start">
                 <Typography {...whenLocationTitleProps}>WHEN</Typography>
                 <Typography {...aboutTextProps}>October 5, 2023 - 6:00 PM</Typography>
               </Flexbox>
             </Flexbox>
+
             <Flexbox
               flexDirection="row"
               gap="16px"
               alignItems="center"
               justifyContent="flex-start"
             >
-              <img src={mapMarker} alt="calendar" />
+              <TiltComponent>
+                <img src={mapMarker} alt="calendar" />
+              </TiltComponent>
               <Flexbox alignItems="flex-start">
                 <Typography {...whenLocationTitleProps}>LOCATION</Typography>
                 <Typography {...aboutTextProps}>Dubai, ATLANTIS, THE PALM</Typography>

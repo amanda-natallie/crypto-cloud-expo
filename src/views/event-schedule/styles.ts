@@ -13,6 +13,9 @@ export const StyledTopicsWrapper = styled(Flexbox)`
   gap: 30px;
 
   & > div {
+    & + * {
+      cursor: pointer;
+    }
     width: calc(50% - 15px);
 
     @media (max-width: 1033px) {

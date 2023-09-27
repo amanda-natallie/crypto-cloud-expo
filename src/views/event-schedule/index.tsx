@@ -3,6 +3,7 @@ import {
   ParticlesComponent,
   SectionHeader,
   StyledGradientText,
+  TiltComponent,
   Typography,
 } from 'components'
 import scheduleMock from 'mockups/schedule.json'
@@ -25,24 +26,26 @@ const EventSchedule = () => {
           <StyledTopicsWrapper>
             {scheduleMock.map((schedule, index) => (
               <Flip left delay={150 * index} key={index}>
-                <StyledEventBlock flexDirection="row">
-                  <StyledEventBlockImage
-                    style={{ backgroundImage: `url(${schedule.image})` }}
-                  />
-                  <StyledEventBlockContent alignItems="flex-start">
-                    <StyledGradientText as="span">
-                      Host: {schedule.hostedBy}
-                    </StyledGradientText>
-                    <Typography
-                      as="h5"
-                      color={theme.colors.black}
-                      fontSize="18px"
-                      weight={700}
-                    >
-                      {schedule.title.toUpperCase()}
-                    </Typography>
-                  </StyledEventBlockContent>
-                </StyledEventBlock>
+                <TiltComponent>
+                  <StyledEventBlock flexDirection="row">
+                    <StyledEventBlockImage
+                      style={{ backgroundImage: `url(${schedule.image})` }}
+                    />
+                    <StyledEventBlockContent alignItems="flex-start">
+                      <StyledGradientText as="span">
+                        Host: {schedule.hostedBy}
+                      </StyledGradientText>
+                      <Typography
+                        as="h5"
+                        color={theme.colors.black}
+                        fontSize="18px"
+                        weight={700}
+                      >
+                        {schedule.title.toUpperCase()}
+                      </Typography>
+                    </StyledEventBlockContent>
+                  </StyledEventBlock>
+                </TiltComponent>
               </Flip>
             ))}
           </StyledTopicsWrapper>
