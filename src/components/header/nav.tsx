@@ -1,9 +1,7 @@
-import { Typography } from 'components'
 import { useMediaQuery } from 'hooks'
 import { useState } from 'react'
-import { theme } from 'theme'
 import { handleScrollIntoView } from 'utils'
-import { StyledBurger, StyledDesktopMenu, StyledMenu } from './styles'
+import { StyledBurger, StyledDesktopMenu, StyledMenu, StyledNavItem } from './styles'
 
 type NavItemProps = {
   text: string
@@ -34,16 +32,15 @@ const Nav = () => {
 
   const NavItemsMapped = () =>
     navItems.map(({ text, anchor }, i) => (
-      <Typography
+      <StyledNavItem
         key={i}
-        as="a"
-        color={theme.colors.white}
-        weight={500}
-        fontSize="18px"
-        onClick={() => handleScrollIntoView(anchor)}
+        onClick={() => {
+          setIsOpen(false)
+          handleScrollIntoView(anchor)
+        }}
       >
         {text}
-      </Typography>
+      </StyledNavItem>
     ))
 
   return !isMobile ? (

@@ -177,3 +177,11 @@ export const StyledDesktopMenu = styled.nav`
     }
   `}
 `
+
+export const StyledNavItem = styled.a`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    font-weight: 500;
+    font-size: 18px;
+  `}
+`
