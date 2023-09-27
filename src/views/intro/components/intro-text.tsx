@@ -1,5 +1,6 @@
 import { Flexbox, Typography } from 'components'
 import { useMediaQuery } from 'hooks'
+import Fade from 'react-reveal/Fade'
 import { theme } from 'theme'
 
 const IntroText = () => {
@@ -15,7 +16,9 @@ const IntroText = () => {
         lineHeight={isMobile ? '70px' : '98px'}
         color={theme.primary.main}
       >
-        Crypto Cloud Expo
+        <Fade top cascade duration={2000}>
+          Crypto Cloud Expo
+        </Fade>
       </Typography>
       <Typography
         as="h2"
@@ -26,7 +29,7 @@ const IntroText = () => {
         textAlign="center"
         maxWidth={isSmallDesktop ? '83vw' : '50vw'}
       >
-        Identifying the Game Changing Trends in the WEB 3.0 Ecossystem
+        <Fade top>Identifying the Game Changing Trends in the WEB 3.0 Ecossystem</Fade>
       </Typography>
     </Flexbox>
   )

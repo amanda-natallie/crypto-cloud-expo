@@ -26,6 +26,6 @@
       "@hookform/resolvers/yup": ["./node_modules/@hookform/resolvers/yup/dist/yup.mjs"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/react-reveal.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
