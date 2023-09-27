@@ -39,7 +39,12 @@ export default createGlobalStyle`
     transition: all 0.4s ease;
     cursor: pointer;
   }
-
+ 
+  #event-particles {
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
+  }
   iframe[style*="z-index: 2147483647"] {
   display: none;
 }

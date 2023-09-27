@@ -1,4 +1,4 @@
-import { ApplicationHeader } from 'components'
+import { ApplicationHeader, ParticlesComponent } from 'components'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { ThemeProvider } from 'styled-components'
 import PageIndex from 'views'
@@ -25,7 +25,7 @@ function App() {
 
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-
+        <ParticlesComponent id="intro-particles" />
         <ApplicationHeader />
         <PageIndex />
       </ThemeProvider>

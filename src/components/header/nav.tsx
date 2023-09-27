@@ -15,6 +15,7 @@ const Nav = () => {
   const navItems: NavItemProps[] = [
     { text: 'Home', anchor: '#home' },
     { text: 'About', anchor: '#about' },
+    { text: 'Schedule', anchor: '#schedule' },
     { text: 'Speakers', anchor: '#speakers' },
     { text: 'Sponsors', anchor: '#sponsors' },
     { text: 'Register', anchor: '#contact' },

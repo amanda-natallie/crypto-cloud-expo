@@ -3,7 +3,7 @@ import { StyledIntroWrapper } from './styles'
 
 const Intro = () => {
   return (
-    <StyledIntroWrapper fullScreen alignItems="center" justifyContent="center">
+    <StyledIntroWrapper fullScreen alignItems="center" justifyContent="center" id="home">
       <IntroText />
       <Counter />
       <IntroBottom />
