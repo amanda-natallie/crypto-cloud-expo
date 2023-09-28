@@ -18,13 +18,16 @@
   {
     "id": 5,
     "image": "./src/assets/sponsors/dsa.png"
-  },{
+  },
+  {
     "id": 6,
     "image": "./src/assets/sponsors/momentum.png"
-  },{
+  },
+  {
     "id": 7,
     "image": "./src/assets/sponsors/tykhe.png"
-  },{
+  },
+  {
     "id": 8,
     "image": "./src/assets/sponsors/woodstock.png"
   }
