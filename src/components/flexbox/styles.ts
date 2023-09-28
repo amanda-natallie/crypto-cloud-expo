@@ -1,6 +1,6 @@
-import styled, { css, Interpolation } from 'styled-components'
-import { FlexboxProps } from './types'
+import styled, { css, FlattenSimpleInterpolation } from 'styled-components'
 import { flexPosition, getHeight, getWidth } from 'utils'
+import { FlexboxProps } from './types'
 
 export const StyledFlexbox = styled.div<FlexboxProps>`
   ${({
@@ -10,14 +10,14 @@ export const StyledFlexbox = styled.div<FlexboxProps>`
     width,
     height,
     customStyles,
-    alignItems = 'center',
-    justifyContent = 'flex-start',
+    alignItems,
+    justifyContent,
     alignSelf,
     justifySelf,
-    flexDirection = 'column',
+    flexDirection,
     gap,
     noWrap,
-  }): Interpolation<object>[] => {
+  }): FlattenSimpleInterpolation => {
     return css`
       ${flexPosition(alignItems, justifyContent, flexDirection, alignSelf, justifySelf)};
       height: ${getHeight({ fullHeight, fullScreen, height })};

@@ -1,76 +1,70 @@
 // exporte o logotipo do footer que esta no figma, assim como os icones de redes sociais,
 // telefone e email
 import { theme } from '../../theme'
-import { Flexbox, Typography } from 'components'
+import { Flexbox, Typography, TypographyProps } from 'components'
 import iconBrand from '../../assets/Icons/Brand.svg'
 import iconInsta from '../../assets/Icons/iconInstagram.svg'
 import iconFacebook from '../../assets/Icons/iconFB.svg'
 import iconTwitter from '../../assets/Icons/iconTT.svg'
 import iconLinkedin from '../../assets/Icons/iconLink.svg'
-import iconMail from '../../assets/Icons/iconE-Mail.svg'
-import iconTel from '../../assets/Icons/iconTelefone.svg'
+import { useMediaQuery } from 'hooks'
+import { StyledCopyrightFooter, StyledIconsFooter } from './styles'
 
 const Footer = () => {
+  // const isMobile = useMediaQuery('(max-width: 630px)')
+  const isSmallDesktop = useMediaQuery('(max-width: 1088px)')
+  const footerTitleTextProps: Partial<TypographyProps> = {
+    fontFamily: "'Press Start 2P'",
+    fontSize: '24px',
+    weight: 400,
+    color: 'theme.colors.black',
+  }
+  const footerTextProps: Partial<TypographyProps> = {
+    fontFamily: "'Press Start 2P'",
+    fontSize: '16px',
+    weight: 400,
+    lineHeight: '28px',
+    letterSpacing: '-0.018px',
+    color: 'theme.colors.white',
+    as: 'h3',
+    margin: '25px auto',
+    textAlign: 'center',
+  }
   return (
-    <Flexbox gap="20px">
-      <Flexbox flexDirection="row" alignItems="baseline">
-        <img src={iconBrand} alt="" />
-        <Typography
-          as="h2"
-          color={theme.colors.white}
-          weight={400}
-          fontSize="16px"
-          fontFamily="'Press Start 2P'"
-        >
-          CryptoCloud Expo
+    <Flexbox
+      gap="20px"
+      id="footer"
+      fullScreen
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Flexbox flexDirection="row" alignItems="baseline" gap="16px">
+        <img src={iconBrand} alt="Brand Icon" />
+        <Typography {...footerTitleTextProps}>CryptoCloud Expo</Typography>
+      </Flexbox>
+      <Flexbox
+        fullWidth
+        alignItems="center"
+        justifyContent="center"
+        customStyles={{ marginBottom: '14px' }}
+      >
+        <Typography {...footerTextProps} maxWidth={isSmallDesktop ? '83vw' : '43vw'}>
+          A wonderful serenity has taken possession of my entire soul, like these sweet
+          mornings of spring which I enjoy with A wonderful serenity has taken possession
+          of my entire soul
         </Typography>
       </Flexbox>
-      <Typography
-        as="h3"
-        color={theme.colors.white}
-        weight={400}
-        fontSize="10px"
-        fontFamily="'Press Start 2P'"
-      >
-        A wonderful serenity has taken possession of my entire soul, like these sweet
-        mornings of spring which I enjoy with A wonderful serenity has taken possession of
-        my entire soul
-      </Typography>
-      <Flexbox flexDirection="row" gap="10px">
-        <img src={iconInsta} alt="Icone do instagram" style={{ width: '30px' }} />
-        <img src={iconFacebook} alt="Icone do Facebook" style={{ width: '30px' }} />
-        <img src={iconTwitter} alt="Icone do Twitter" style={{ width: '30px' }} />
-        <img src={iconLinkedin} alt="Icone do Linkedin" style={{ width: '30px' }} />
-      </Flexbox>
-      <Flexbox gap="10px">
-        <Typography as="span" color={theme.colors.white}>
+      <StyledIconsFooter>
+        <img src={iconFacebook} alt="Facebook icon" />
+        <img src={iconTwitter} alt="Twitter icon" />
+        <img src={iconLinkedin} alt="Linkedin icon" />
+        <img src={iconInsta} alt="Instagram icon" />
+      </StyledIconsFooter>
+      <StyledCopyrightFooter width="90%">
+        <Typography as="span" color={theme.colors.white} marginTop="48px">
           Copyright © Wellso 2022. All rights reserved.
         </Typography>
-        <Flexbox flexDirection="row" gap="10px">
-          <Flexbox flexDirection="row" gap="10px">
-            <img src={iconTel} alt="Icone de um Telefone" style={{ width: '30px' }} />
-            <Flexbox>
-              <Typography as="span" color={theme.gradients[200]}>
-                Get a Quote
-              </Typography>
-              <Typography as="span" color={theme.colors.white}>
-                111 888666
-              </Typography>
-            </Flexbox>
-          </Flexbox>
-          <Flexbox flexDirection="row" gap="10px">
-            <img src={iconMail} alt="Icone de um Telefone" style={{ width: '30px' }} />
-            <Flexbox alignItems="flex-start">
-              <Typography as="span" color={theme.gradients[200]}>
-                Our Email
-              </Typography>
-              <Typography as="span" color={theme.colors.white}>
-                info@Wellso.com
-              </Typography>
-            </Flexbox>
-          </Flexbox>
-        </Flexbox>
-      </Flexbox>
+      </StyledCopyrightFooter>
     </Flexbox>
   )
 }

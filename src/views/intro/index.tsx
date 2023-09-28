@@ -1,10 +1,14 @@
-// Exportar logotipo, linhas que ficam em volta do contador, imagem de background do Figma
-// pode instalar uma lib de contador caso queira
-// não esqueça do mobile first
-// o menu é de scroll. Quando chegar no final da página, o menu fica fixo no topo
+import { Counter, IntroBottom, IntroText } from './components'
+import { StyledIntroWrapper } from './styles'
 
 const Intro = () => {
-  return <div>intro</div>
+  return (
+    <StyledIntroWrapper fullScreen alignItems="center" justifyContent="center" id="home">
+      <IntroText />
+      <Counter />
+      <IntroBottom />
+    </StyledIntroWrapper>
+  )
 }
 
 export default Intro

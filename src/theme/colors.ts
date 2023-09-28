@@ -22,9 +22,10 @@ const colors = {
 }
 
 const gradients = {
-  100: 'linear-gradient(90deg, #3C9AFE 0%, #B8D7F9 100%)',
-  200: 'linear-gradient(90deg, #1A46B5 0%, #3C9AFE 100%);',
+  main: 'linear-gradient(90deg, #3C9AFE 0%, #B8D7F9 100%)',
+  200: 'linear-gradient(90deg, #1A46B5 0%, #3C9AFE 100%)',
   300: 'linear-gradient(90deg, rgba(26.34, 69.54, 180.62, 0.50) 0%, rgba(60.31, 153.90, 253.94, 0.50) 100%)',
+  400: 'linear-gradient(47deg, rgba(64,6,64,1) 0%, rgba(6,17,49,1) 71%)',
 }
 
 const palette = {

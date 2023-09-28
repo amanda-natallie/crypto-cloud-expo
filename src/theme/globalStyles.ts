@@ -5,7 +5,6 @@ export default createGlobalStyle`
   #root {
     padding:0 !important;
     width: 100%;
-    height: 100%;
   }
   &::-webkit-scrollbar {
       width: 0px;
@@ -20,12 +19,9 @@ export default createGlobalStyle`
   }
   body {
     width: 100vw;
-    height: 100vh;
     max-width: 100vw;
-    max-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
-    color: ${palette.primary.main};
+    color: ${palette.colors.white};
     background: ${palette.colors.darkBackground};
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -38,6 +34,16 @@ export default createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600 !important;
+  }
+  a, button {
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+ 
+  #event-particles {
+    width: 100vw;
+    height: 130vh;
+    position: absolute;
   }
   iframe[style*="z-index: 2147483647"] {
   display: none;

@@ -1,6 +1,31 @@
 [
   {
     "id": 1,
-    "image": "assets/sponsors/woodstock.png"
+    "image": "./src/assets/sponsors/18Ventures.png"
+  },
+  {
+    "id": 2,
+    "image": "./src/assets/sponsors/888vc.png"
+  },
+  {
+    "id": 3,
+    "image": "./src/assets/sponsors/annex.png"
+  },
+  {
+    "id": 4,
+    "image": "./src/assets/sponsors/c3.png"
+  },
+  {
+    "id": 5,
+    "image": "./src/assets/sponsors/dsa.png"
+  },{
+    "id": 6,
+    "image": "./src/assets/sponsors/momentum.png"
+  },{
+    "id": 7,
+    "image": "./src/assets/sponsors/tykhe.png"
+  },{
+    "id": 8,
+    "image": "./src/assets/sponsors/woodstock.png"
   }
 ]
