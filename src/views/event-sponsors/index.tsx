@@ -4,7 +4,7 @@
 // use o componente de SectionHeader que vc criou anteriormente
 
 import sponsorsMock from '../../mockups/sponsors.json'
-import { Container } from 'components'
+import { Container, ParticlesComponent } from 'components'
 import { Flexbox } from 'components'
 import {
   StyledEventSponsorsBlock,
@@ -31,7 +31,8 @@ const EventSponsors = () => {
     marginBottom: '10px',
   }
   return (
-    <StyledSponsorWrapper fullWidth fullHeight id="sponsors">
+    <StyledSponsorWrapper fullWidth id="sponsors">
+      <ParticlesComponent id="event-particles" />
       <Container>
         <StyledTitleSponsors fullWidth gap="10px">
           <img src={iconBrand} alt="Brand Icon" />

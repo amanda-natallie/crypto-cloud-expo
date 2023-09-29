@@ -1,70 +1,74 @@
 [
-    {
-        "id":1,
-        "speaker":"Sunny Lu",
-        "image": "./src/assets/speakers/1)Sunny-Lu.png",
-        "specialist":"Vechain"
-    },
-    {
-        "id":2,
-        "speaker":"Helen Hai",
-        "image": "./src/assets/speakers/2)Helen-Hai.png",
-        "specialist":"Binance"
-    },
-    {
-        "id":3,
-        "speaker":"Alex Zinder",
-        "image": "./src/assets/speakers/3)Alex-Zinder.png",
-        "specialist":"Legder Enterprise"
-    },
-    {
-        "id":4,
-        "speaker":"Gracy Chen",
-        "image": "./src/assets/speakers/4)Gracy-Chen.png",
-        "specialist":"BitGet"
-    },
-    {
-        "id":5,
-        "speaker":"Mohammed Al Blooshi",
-        "image": "./src/assets/speakers/5)Mohammed-Alblooshi.png",
-        "specialist":"Dubai International"
-    },
-    {
-        "id":6,
-        "speaker":"Max Kordek",
-        "image": "./src/assets/speakers/6)Max-Kordek.png",
-        "specialist":"Lisk"
-    },
-    {
-        "id":7,
-        "speaker":"Nena Dokuzov",
-        "image": "./src/assets/speakers/7)Nena-Dokuzov.png",
-        "specialist":"Alserkal Group"
-    },
-    {
-        "id":8,
-        "speaker":"Reece Merrick",
-        "image": "./src/assets/speakers/8)Reece-Merrick.png",
-        "specialist":"Ripple"
-    }, {
-        "id":9,
-        "speaker":"Dina Sam'an",
-        "image": "./src/assets/speakers/9)Dina-Sam'an.png",
-        "specialist":"CoinMENA"
-    }, {
-        "id":10,
-        "speaker":"Jean Charles Gaudechon",
-        "image": "./src/assets/speakers/10)Jean-Charles-Gaudechon.png",
-        "specialist":"OneFootball Labs"
-    },{
-        "id":11,
-        "speaker":"Nicole Purim",
-        "image": "./src/assets/speakers/11)Nicole-Purin.png",
-        "specialist":"OKX"
-    },{
-        "id":12,
-        "speaker":"Jason Aleggrante",
-        "image": "./src/assets/speakers/12)Jason-Allegrante.png",
-        "specialist":"Fireblocks"
-    }
+  {
+    "id": 1,
+    "speaker": "Sunny Lu",
+    "image": "./src/assets/speakers/1)Sunny-Lu.png",
+    "specialist": "Vechain"
+  },
+  {
+    "id": 2,
+    "speaker": "Helen Hai",
+    "image": "./src/assets/speakers/2)Helen-Hai.png",
+    "specialist": "Binance"
+  },
+  {
+    "id": 3,
+    "speaker": "Alex Zinder",
+    "image": "./src/assets/speakers/3)Alex-Zinder.png",
+    "specialist": "Legder Enterprise"
+  },
+  {
+    "id": 4,
+    "speaker": "Gracy Chen",
+    "image": "./src/assets/speakers/4)Gracy-Chen.png",
+    "specialist": "BitGet"
+  },
+  {
+    "id": 5,
+    "speaker": "Mohammed Al Blooshi",
+    "image": "./src/assets/speakers/5)Mohammed-Alblooshi.png",
+    "specialist": "Dubai International"
+  },
+  {
+    "id": 6,
+    "speaker": "Max Kordek",
+    "image": "./src/assets/speakers/6)Max-Kordek.png",
+    "specialist": "Lisk"
+  },
+  {
+    "id": 7,
+    "speaker": "Nena Dokuzov",
+    "image": "./src/assets/speakers/7)Nena-Dokuzov.png",
+    "specialist": "Alserkal Group"
+  },
+  {
+    "id": 8,
+    "speaker": "Reece Merrick",
+    "image": "./src/assets/speakers/8)Reece-Merrick.png",
+    "specialist": "Ripple"
+  },
+  {
+    "id": 9,
+    "speaker": "Dina Sam'an",
+    "image": "./src/assets/speakers/9)Dina-Sam'an.png",
+    "specialist": "CoinMENA"
+  },
+  {
+    "id": 10,
+    "speaker": "Jean Charles Gaudechon",
+    "image": "./src/assets/speakers/10)Jean-Charles-Gaudechon.png",
+    "specialist": "OneFootball Labs"
+  },
+  {
+    "id": 11,
+    "speaker": "Nicole Purim",
+    "image": "./src/assets/speakers/11)Nicole-Purin.png",
+    "specialist": "OKX"
+  },
+  {
+    "id": 12,
+    "speaker": "Jason Aleggrante",
+    "image": "./src/assets/speakers/12)Jason-Allegrante.png",
+    "specialist": "Fireblocks"
+  }
 ]

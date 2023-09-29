@@ -7,10 +7,10 @@ export const StyledEventSponsorsBlock = styled(Flexbox)`
   gap: 40px;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 80%;
   img {
     background-color: white;
-    width: 28%;
+    width: 250px;
     height: 128px;
     border-radius: 10px;
     padding: 40px;
@@ -35,7 +35,7 @@ export const StyledSponsorWrapper = styled(Flexbox)<FlexboxProps>`
   background-position: center;
   background-attachment: fixed;
   top: 0;
-
+  padding: 64px;
   @media (min-width: 1025px) {
     padding-top: 10vh;
   }
