@@ -6,6 +6,7 @@ import EventSchedule from './event-schedule'
 import Footer from './footer'
 import EventSponsors from './event-sponsors'
 import EventSpeakers from './event-speakers'
+import AboutVenue from './about-venue'
 
 const PageIndex = () => {
   const is1024 = useMediaQuery('(max-width: 1024px)')
@@ -20,6 +21,7 @@ const PageIndex = () => {
       >
         <AboutUs />
         <EventSchedule />
+        <AboutVenue />
         <EventSpeakers />
         <EventSponsors />
         <Footer />
