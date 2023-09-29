@@ -4,44 +4,19 @@
 // use o componente de SectionHeader que vc criou anteriormente
 
 import sponsorsMock from '../../mockups/sponsors.json'
-import { Container, ParticlesComponent } from 'components'
+import { Container, SectionHeader } from 'components'
 import { Flexbox } from 'components'
-import {
-  StyledEventSponsorsBlock,
-  StyledTitleSponsors,
-  StyledSponsorWrapper,
-} from './styles'
-import iconBrand from '../../assets/Icons/Brand.svg'
-import waves from '../../assets/shapes/waves.svg'
-import { Typography, TypographyProps } from 'components'
+import { StyledEventSponsorsBlock, StyledSponsorWrapper } from './styles'
 import Fade from 'react-reveal/Fade'
 
 const EventSponsors = () => {
-  const titleTextProps: Partial<TypographyProps> = {
-    fontFamily: "'Rubik'",
-    fontSize: '18px',
-    weight: 500,
-    color: 'theme.colors.white',
-  }
-  const sponsorsTextProps: Partial<TypographyProps> = {
-    fontFamily: "'Rubik'",
-    fontSize: '48px',
-    weight: 600,
-    color: 'theme.colors.white',
-    marginBottom: '10px',
-  }
   return (
     <StyledSponsorWrapper fullWidth id="sponsors">
-      <ParticlesComponent id="event-particles" />
+      <SectionHeader
+        smallTitle="Check Who Make The Event Possible"
+        title="Event Sponsors"
+      />
       <Container>
-        <StyledTitleSponsors fullWidth gap="10px">
-          <img src={iconBrand} alt="Brand Icon" />
-          <Typography {...titleTextProps}>Check Who Make The Event Possible</Typography>
-        </StyledTitleSponsors>
-        <Flexbox fullWidth customStyles={{ marginBottom: '48px' }}>
-          <Typography {...sponsorsTextProps}>Event Sponsors</Typography>
-          <img src={waves} alt="Shape" />
-        </Flexbox>
         <Flexbox>
           <StyledEventSponsorsBlock>
             {sponsorsMock.map((sponsors, index) => (
