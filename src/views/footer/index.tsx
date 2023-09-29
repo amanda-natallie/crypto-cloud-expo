@@ -31,13 +31,7 @@ const Footer = () => {
     textAlign: 'center',
   }
   return (
-    <Flexbox
-      gap="20px"
-      id="footer"
-      fullScreen
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Flexbox gap="20px" id="footer" fullScreen justifyContent="center">
       <Flexbox flexDirection="row" alignItems="baseline" gap="16px">
         <img src={iconBrand} alt="Brand Icon" />
         <Typography {...footerTitleTextProps}>CryptoCloud Expo</Typography>

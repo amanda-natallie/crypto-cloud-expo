@@ -6,10 +6,15 @@
 import sponsorsMock from '../../mockups/sponsors.json'
 import { Container } from 'components'
 import { Flexbox } from 'components'
-import { StyledEventSponsorsBlock, StyledTitleSponsors } from './styles'
+import {
+  StyledEventSponsorsBlock,
+  StyledTitleSponsors,
+  StyledSponsorWrapper,
+} from './styles'
 import iconBrand from '../../assets/Icons/Brand.svg'
 import waves from '../../assets/shapes/waves.svg'
 import { Typography, TypographyProps } from 'components'
+import Fade from 'react-reveal/Fade'
 
 const EventSponsors = () => {
   const titleTextProps: Partial<TypographyProps> = {
@@ -26,23 +31,27 @@ const EventSponsors = () => {
     marginBottom: '10px',
   }
   return (
-    <Container>
-      <StyledTitleSponsors fullWidth gap="10px">
-        <img src={iconBrand} alt="Brand Icon" />
-        <Typography {...titleTextProps}>Check Who Make The Event Possible</Typography>
-      </StyledTitleSponsors>
-      <Flexbox fullWidth customStyles={{ marginBottom: '48px' }}>
-        <Typography {...sponsorsTextProps}>Event Sponsors</Typography>
-        <img src={waves} alt="Shape" />
-      </Flexbox>
-      <Flexbox>
-        <StyledEventSponsorsBlock>
-          {sponsorsMock.map((sponsors, index) => (
-            <img key={index} src={sponsors.image} alt="Sponsors img" />
-          ))}
-        </StyledEventSponsorsBlock>
-      </Flexbox>
-    </Container>
+    <StyledSponsorWrapper fullWidth fullHeight id="sponsors">
+      <Container>
+        <StyledTitleSponsors fullWidth gap="10px">
+          <img src={iconBrand} alt="Brand Icon" />
+          <Typography {...titleTextProps}>Check Who Make The Event Possible</Typography>
+        </StyledTitleSponsors>
+        <Flexbox fullWidth customStyles={{ marginBottom: '48px' }}>
+          <Typography {...sponsorsTextProps}>Event Sponsors</Typography>
+          <img src={waves} alt="Shape" />
+        </Flexbox>
+        <Flexbox>
+          <StyledEventSponsorsBlock>
+            {sponsorsMock.map((sponsors, index) => (
+              <Fade top delay={10 * index} key={index}>
+                <img src={sponsors.image} alt="Sponsors img" />
+              </Fade>
+            ))}
+          </StyledEventSponsorsBlock>
+        </Flexbox>
+      </Container>
+    </StyledSponsorWrapper>
   )
 }
 

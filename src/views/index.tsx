@@ -5,6 +5,7 @@ import { useMediaQuery } from 'hooks'
 import EventSchedule from './event-schedule'
 import Footer from './footer'
 import EventSponsors from './event-sponsors'
+import EventSpeakers from './event-speakers'
 
 const PageIndex = () => {
   const is1024 = useMediaQuery('(max-width: 1024px)')
@@ -19,6 +20,7 @@ const PageIndex = () => {
       >
         <AboutUs />
         <EventSchedule />
+        <EventSpeakers />
         <EventSponsors />
         <Footer />
       </Flexbox>

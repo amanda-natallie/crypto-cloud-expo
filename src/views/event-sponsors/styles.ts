@@ -34,7 +34,6 @@ export const StyledSponsorWrapper = styled(Flexbox)<FlexboxProps>`
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  position: absolute;
   top: 0;
 
   @media (min-width: 1025px) {
