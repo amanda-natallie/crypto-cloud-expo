@@ -42,7 +42,7 @@ export default createGlobalStyle`
  
   #event-particles {
     width: 100vw;
-    height: 130vh;
+    height: 180vh;
     position: absolute;
   }
   iframe[style*="z-index: 2147483647"] {

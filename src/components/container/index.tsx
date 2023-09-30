@@ -7,6 +7,7 @@ const Container = ({ children }: { children: ReactNode }) => {
       width="75vw"
       flexDirection="row"
       alignItems="center"
+      justifyContent="center"
       fullHeight
       customStyles={{ maxWidth: '1502px' }}
     >

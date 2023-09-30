@@ -16,7 +16,7 @@ const SectionHeader = (props: SectionHeaderProps) => {
     <Flexbox
       alignItems={align === 'left' ? 'flex-start' : 'center'}
       gap="14px"
-      customStyles={{ marginBottom: '14px' }}
+      customStyles={{ marginBlock: '5vh' }}
     >
       <Flexbox gap="4px" flexDirection="row">
         <img src={favicon} alt="favicon" />

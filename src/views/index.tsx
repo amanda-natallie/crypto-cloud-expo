@@ -20,8 +20,8 @@ const PageIndex = () => {
         customStyles={{ marginTop: is1024 ? '92.7vh' : '90.9vh' }}
       >
         <AboutUs />
-        <EventSchedule />
         <AboutVenue />
+        <EventSchedule />
         <EventSpeakers />
         <EventSponsors />
         <Footer />
