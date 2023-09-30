@@ -16,7 +16,7 @@ const IntroBottom = () => {
         <Fade bottom delay={1000}>
           <Flexbox flexDirection="row" gap="4px">
             <StyledGradientText fontSize="20px" weight={600}>
-              Oct 5, 2023 at 6:30pm
+              Oct 20, 2023 at 6:30pm
             </StyledGradientText>
             <img src={mapMarker} alt="map-marker" />
           </Flexbox>

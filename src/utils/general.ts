@@ -11,7 +11,7 @@ export const getCountdown = (): {
   minutes: number
   seconds: number
 } => {
-  const targetDate = new Date('2023-10-05T18:30:00+04:00')
+  const targetDate = new Date('2023-10-20T18:30:00+04:00')
   const now = new Date()
 
   const timeDifference = targetDate.getTime() - now.getTime()

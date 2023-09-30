@@ -79,7 +79,7 @@ const AboutUs = () => {
               </TiltComponent>
               <Flexbox alignItems="flex-start">
                 <Typography {...whenLocationTitleProps}>WHEN</Typography>
-                <Typography {...aboutTextProps}>October 5, 2023 - 6:00 PM</Typography>
+                <Typography {...aboutTextProps}>October 20, 2023 - 6:30 PM</Typography>
               </Flexbox>
             </Flexbox>
 

@@ -45,4 +45,5 @@ export const StyledSpeakersSectionWrapper = styled(Flexbox)`
   background-position: left bottom 5vh;
   background-size: 70vh;
   background-attachment: fixed;
+  padding-bottom: 84px;
 `
