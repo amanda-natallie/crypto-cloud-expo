@@ -6,11 +6,10 @@ import {
   Typography,
   TypographyProps,
 } from 'components'
+import { useMediaQuery } from 'hooks'
 import Adress from '../../assets/about-venue/Adress.svg'
 import venue from '../../assets/about-venue/venue.svg'
 import { AboutVenueWrapper, StyledAddressWrapper } from './styles'
-import { useMediaQuery } from 'hooks'
-import IframeResizer from 'iframe-resizer-react'
 
 // use o componente de SectionHeader que vc criou anteriormente
 const AboutVenue = () => {
@@ -75,7 +74,7 @@ const AboutVenue = () => {
           </StyledGradientText>
         </StyledAddressWrapper>
 
-        <IframeResizer
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.15522083419!2d55.1171498!3d25.1304426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2sAtlantis%2C%20The%20Palm!5e0!3m2!1sen!2sbr!4v1696089966535!5m2!1sen!2sbr"
           style={{
             border: 0,
