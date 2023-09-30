@@ -12,6 +12,7 @@ const TiltComponent: React.FC<TiltProps> = ({ children }) => {
 
     const handleMove = (e: MouseEvent) => {
       if (el) {
+        el.style.transition = 'all 0.2s ease'
         const height = el.clientHeight
         const width = el.clientWidth
 
