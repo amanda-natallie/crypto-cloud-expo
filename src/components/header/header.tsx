@@ -11,7 +11,12 @@ const ApplicationHeader = () => {
     const position = window.scrollY
     setScrollPosition(position)
   }
-
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contact')
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => {
@@ -31,7 +36,7 @@ const ApplicationHeader = () => {
       <StyledNavbarDesktopWrapper>
         <Nav />
       </StyledNavbarDesktopWrapper>
-      <Button aria-label="header-register-button" onClick={() => null}>
+      <Button aria-label="header-register-button" onClick={scrollToContact}>
         Register Now
       </Button>
     </StyledHeaderWrapper>

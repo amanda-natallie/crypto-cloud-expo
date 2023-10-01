@@ -12,7 +12,7 @@ const Footer = () => {
       id="footer"
       fullWidth
       justifyContent="center"
-      customStyles={{ paddingTop: '5vh' }}
+      customStyles={{ paddingTop: '5vh', backgroundColor: '#161616' }}
     >
       <img src={iconBrand} alt="Brand Icon" />
       <StyledCopyrightFooter width="90%">

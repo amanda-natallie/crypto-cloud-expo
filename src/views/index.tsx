@@ -7,6 +7,7 @@ import Footer from './footer'
 import EventSponsors from './event-sponsors'
 import EventSpeakers from './event-speakers'
 import AboutVenue from './about-venue'
+import RegisterForm from './register-form'
 
 const PageIndex = () => {
   const is1024 = useMediaQuery('(max-width: 1024px)')
@@ -24,6 +25,7 @@ const PageIndex = () => {
         <EventSchedule />
         <EventSpeakers />
         <EventSponsors />
+        <RegisterForm />
         <Footer />
       </Flexbox>
     </>

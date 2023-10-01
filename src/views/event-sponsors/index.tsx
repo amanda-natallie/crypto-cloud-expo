@@ -1,15 +1,23 @@
-// siga o mockup de schedule para criar o mockup de sponsors
-// renomeie as fotos dentro de assets/sponsors para nome-do-sponsor.jpg
-// exporte a imagem de background dessa section no Figma
-// use o componente de SectionHeader que vc criou anteriormente
-
+import { useState } from 'react'
 import sponsorsMock from '../../mockups/sponsors.json'
-import { Container, SectionHeader } from 'components'
+import { Container, SectionHeader, TiltComponent } from 'components'
 import { Flexbox } from 'components'
-import { StyledEventSponsorsBlock, StyledSponsorWrapper } from './styles'
+import { SponsorImage, StyledEventSponsorsBlock, StyledSponsorWrapper } from './styles'
 import Fade from 'react-reveal/Fade'
 
 const EventSponsors = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+
+  const handleImageHover = (index: number | null) => {
+    setHoveredIndex(index)
+  }
+
+  const handleImageClick = (url: string | undefined) => {
+    if (url) {
+      window.open(url, '_blank')
+    }
+  }
+
   return (
     <StyledSponsorWrapper fullWidth id="sponsors">
       <SectionHeader
@@ -19,9 +27,18 @@ const EventSponsors = () => {
       <Container>
         <Flexbox>
           <StyledEventSponsorsBlock>
-            {sponsorsMock.map((sponsors, index) => (
+            {sponsorsMock.map((sponsor, index) => (
               <Fade top delay={10 * index} key={index}>
-                <img src={sponsors.image} alt="Sponsors img" />
+                <TiltComponent>
+                  <SponsorImage
+                    onMouseEnter={() => handleImageHover(index)}
+                    onMouseLeave={() => handleImageHover(null)}
+                    onClick={() => handleImageClick(sponsor.url)}
+                    isHovered={hoveredIndex === index}
+                  >
+                    <img src={sponsor.image} alt="Sponsors img" />
+                  </SponsorImage>
+                </TiltComponent>
               </Fade>
             ))}
           </StyledEventSponsorsBlock>

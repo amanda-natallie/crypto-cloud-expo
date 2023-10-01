@@ -1,34 +1,42 @@
 [
   {
     "id": 1,
-    "image": "./src/assets/sponsors/18Ventures.png"
+    "image": "./src/assets/sponsors/18Ventures.png",
+    "url":"https://18ventures.co/"
   },
   {
     "id": 2,
-    "image": "./src/assets/sponsors/888vc.png"
+    "image": "./src/assets/sponsors/888vc.png",
+    "url":"https://www.888vc.co/"
   },
   {
     "id": 3,
-    "image": "./src/assets/sponsors/annex.png"
+    "image": "./src/assets/sponsors/annex.png",
+    "url":"https://annexinvestments.com/"
   },
   {
     "id": 4,
-    "image": "./src/assets/sponsors/c3.png"
+    "image": "./src/assets/sponsors/c3.png",
+    "url":"https://annexinvestments.com/"
   },
   {
     "id": 5,
-    "image": "./src/assets/sponsors/dsa.png"
+    "image": "./src/assets/sponsors/dsa.png",
+    "url":"https://dsainvestments.com/"
   },
   {
     "id": 6,
-    "image": "./src/assets/sponsors/momentum.png"
+    "image": "./src/assets/sponsors/momentum.png",
+    "url":"https://dsainvestments.com/"
   },
   {
     "id": 7,
-    "image": "./src/assets/sponsors/tykhe.png"
+    "image": "./src/assets/sponsors/tykhe.png",
+    "url":"https://tykheblock.ventures/"
   },
   {
     "id": 8,
-    "image": "./src/assets/sponsors/woodstock.png"
+    "image": "./src/assets/sponsors/woodstock.png",
+    "url":"https://tykheblock.ventures/"
   }
 ]
