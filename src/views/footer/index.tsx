@@ -1,5 +1,3 @@
-// exporte o logotipo do footer que esta no figma, assim como os icones de redes sociais,
-// telefone e email
 import { Flexbox, Typography } from 'components'
 import iconBrand from '../../assets/images/brand.svg'
 import { theme } from '../../theme'

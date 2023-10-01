@@ -7,11 +7,3 @@ export const StyledCopyrightFooter = styled(Flexbox)`
   justify-content: center;
   margin-bottom: 48px;
 `
-export const StyledIconsFooter = styled(Flexbox)`
-  flex-direction: row;
-  gap: 32px;
-  margin-bottom: 32px;
-  img {
-    width: 48px;
-  }
-`

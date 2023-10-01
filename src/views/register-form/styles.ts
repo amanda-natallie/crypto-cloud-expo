@@ -34,7 +34,7 @@ export const Button = styled.button`
     background: linear-gradient(90deg, #1a46b5 0%, #3c9afe 100%);
   }
 `
-export const StyledSpeakersSectionWrapper = styled(Flexbox)`
+export const StyledRegisterSectionWrapper = styled(Flexbox)`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-position: left bottom 5vh;

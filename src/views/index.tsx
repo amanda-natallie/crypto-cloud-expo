@@ -6,7 +6,7 @@ import EventSchedule from './event-schedule'
 import Footer from './footer'
 import EventSponsors from './event-sponsors'
 import EventSpeakers from './event-speakers'
-import AboutVenue from './about-venue'
+// import AboutVenue from './about-venue'
 import RegisterForm from './register-form'
 
 const PageIndex = () => {
@@ -21,7 +21,7 @@ const PageIndex = () => {
         customStyles={{ marginTop: is1024 ? '92.7vh' : '90.9vh' }}
       >
         <AboutUs />
-        <AboutVenue />
+        {/* <AboutVenue /> */}
         <EventSchedule />
         <EventSpeakers />
         <EventSponsors />

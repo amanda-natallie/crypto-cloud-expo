@@ -12,7 +12,6 @@ import venue from '../../assets/about-venue/venue.svg'
 import { AboutVenueWrapper, StyledAddressWrapper } from './styles'
 import Fade from 'react-reveal/Fade'
 
-// use o componente de SectionHeader que vc criou anteriormente
 const AboutVenue = () => {
   const getDirectionProps: Partial<TypographyProps> = {
     fontSize: '36px',

@@ -1,6 +1,3 @@
-// siga o mockup de schedule para criar o mockup de speakers
-// renomeie as fotos dentro de assets/speakers para nome-do-palestrante.jpg
-// exporte a shape que está no background dessa section no Figma
 import speakersMock from '../../mockups/speakers.json'
 import { Container, SectionHeader, StyledGradientText, TiltComponent } from 'components'
 import { Flexbox } from 'components'
