@@ -4,6 +4,7 @@ import iconBrand from '../../assets/Icons/Brand.svg'
 import { Form, Button, Input, StyledRegisterSectionWrapper } from './styles'
 import { useState } from 'react'
 import axios from 'axios'
+import { useMediaQuery } from 'hooks'
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -38,84 +39,77 @@ const RegisterForm = () => {
         console.error('Ocorreu um erro ao enviar os dados.', error)
       })
   }
-
+  const isMobile = useMediaQuery('(max-width: 1024px)')
   return (
     <StyledRegisterSectionWrapper fullWidth id="contact">
       <Container>
         <Flexbox
-          fullWidth
-          flexDirection="row"
-          gap="68px"
+          gap="20px"
           justifyContent="center"
           alignItems="center"
-          customStyles={{ padding: '100px' }}
+          width={isMobile ? '100%' : '40%'}
+          customStyles={{ padding: !isMobile ? '4vw' : '4vw 0' }}
         >
-          <Flexbox gap="20px" justifyContent="center" alignItems="center" width="400px">
-            <Typography as="h1" fontSize="48px" fontWeight="700" lineHeight="64px">
-              Why Should You Attend Our all Conference
-            </Typography>
-            <Typography as="span" fontSize="16px" fontWeight="400" lineHeight="34px">
-              Lorem ipsum dolor sit amet, conseca dipisicing elit, sed do eius tempor
-              incididunt. Lorem ipsum dolor sit amet, conseca dipisicing elit,
-            </Typography>
-          </Flexbox>
-          <Flexbox width="600px">
-            <Flexbox
-              fullWidth
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              gap="14px"
-              customStyles={{ marginBlock: '5vh' }}
-            >
-              <Flexbox gap="4px" flexDirection="row">
-                <img src={iconBrand} alt="Brand Icon" style={{ width: '60px' }} />
-                <StyledGradientText>We want you there</StyledGradientText>
-              </Flexbox>
-              <Typography
-                fontSize="36px"
-                weight={700}
-                lineHeight="65px"
-                color={theme.colors.white}
-              >
-                Register Now
-              </Typography>
+          <Typography as="h1" fontSize="48px" fontWeight="700" lineHeight="64px">
+            Why Should You Attend Our all Conference
+          </Typography>
+          <Typography as="span" fontSize="16px" fontWeight="400" lineHeight="34px">
+            Lorem ipsum dolor sit amet, conseca dipisicing elit, sed do eius tempor
+            incididunt. Lorem ipsum dolor sit amet, conseca dipisicing elit,
+          </Typography>
+        </Flexbox>
+        <Flexbox width={isMobile ? '100%' : '60%'}>
+          <Flexbox
+            fullWidth
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            gap="14px"
+            customStyles={{ marginBlock: '5vh' }}
+          >
+            <Flexbox gap="4px" flexDirection="row">
+              <img src={iconBrand} alt="Brand Icon" style={{ width: '60px' }} />
+              <StyledGradientText>We want you there</StyledGradientText>
             </Flexbox>
-            <Form onSubmit={handleSubmit}>
-              <Flexbox fullWidth>
-                <Flexbox gap="19px" flexDirection="row">
-                  <Input
-                    type="text"
-                    placeholder="Your name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                  <Input
-                    type="email"
-                    placeholder="Email address"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                  <Input
-                    type="text"
-                    placeholder="Phone Number"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                  />
-                  <Input
-                    type="text"
-                    placeholder="Subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                  />
-                  <Button type="submit">Submit Registration</Button>
-                </Flexbox>
-              </Flexbox>
-            </Form>
+            <Typography
+              fontSize="36px"
+              weight={700}
+              lineHeight="65px"
+              color={theme.colors.white}
+            >
+              Register Now
+            </Typography>
           </Flexbox>
+          <Form onSubmit={handleSubmit}>
+            <Input
+              type="text"
+              placeholder="Your name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <Input
+              type="email"
+              placeholder="Email address"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <Input
+              type="text"
+              placeholder="Phone Number"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+            />
+            <Input
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+            />
+            <Button type="submit">Submit Registration</Button>
+          </Form>
         </Flexbox>
       </Container>
     </StyledRegisterSectionWrapper>
