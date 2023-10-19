@@ -1,6 +1,6 @@
 import { Flexbox } from 'components'
 import styled from 'styled-components'
-import bg from '../../assets/shapes/shape-bg-register.svg'
+import bg from '/assets/shapes/shape-bg-register.svg'
 
 export const Form = styled.form`
   width: 100%;

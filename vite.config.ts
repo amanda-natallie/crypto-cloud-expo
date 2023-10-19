@@ -15,6 +15,7 @@ const config: ViteConfig = {
     assetsDir: 'assets',
     manifest: true,
     minify: true,
+    assetsInlineLimit: 0,
   },
   base: './',
 }

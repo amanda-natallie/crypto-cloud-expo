@@ -1,6 +1,6 @@
-import imgAboutUs from 'assets/images/about-us.png'
-import calendar from 'assets/icons/calendar-gradient.svg'
-import mapMarker from 'assets/icons/map-marker-gradient.svg'
+import imgAboutUs from '/assets/images/about-us.png'
+import calendar from '/assets/icons/calendar-gradient.svg'
+import mapMarker from '/assets/icons/map-marker-gradient.svg'
 import {
   SectionHeader,
   Container,

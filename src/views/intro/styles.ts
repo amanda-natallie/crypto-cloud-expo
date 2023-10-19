@@ -1,5 +1,5 @@
-import introBg from 'assets/backgrounds/intro-bg.png'
-import counterShape from 'assets/shapes/counter-arrow.svg'
+import introBg from '/assets/backgrounds/intro-bg.png'
+import counterShape from '/assets/shapes/counter-arrow.svg'
 import { Flexbox, FlexboxProps, StyledGradientText } from 'components'
 
 import styled from 'styled-components'

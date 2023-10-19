@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import gridShape from 'assets/shapes/grids.png'
+import gridShape from '/assets/shapes/grids.png'
 import { Flexbox } from 'components'
-import circleShape from 'assets/shapes/circle.svg'
+import circleShape from '/assets/shapes/circle.svg'
 
 export const StyledAboutUsWrapper = styled(Flexbox)`
   background-image: url(${gridShape});

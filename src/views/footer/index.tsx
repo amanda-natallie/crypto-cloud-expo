@@ -1,5 +1,5 @@
 import { Flexbox, Typography } from 'components'
-import iconBrand from '../../assets/images/brand.svg'
+import iconBrand from '/assets/images/brand.svg'
 import { theme } from '../../theme'
 import { StyledCopyrightFooter } from './styles'
 

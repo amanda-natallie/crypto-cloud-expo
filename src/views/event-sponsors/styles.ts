@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import { Flexbox, FlexboxProps } from 'components'
-import introBg from 'assets/backgrounds/intro-bg.png'
+import introBg from '/assets/backgrounds/intro-bg.png'
 
 interface SponsorImageProps {
   isHovered: boolean

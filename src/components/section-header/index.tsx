@@ -1,5 +1,5 @@
-import favicon from 'assets/images/favicon.svg'
-import waves from 'assets/shapes/waves.svg'
+import favicon from '/assets/images/favicon.svg'
+import waves from '/assets/shapes/waves.svg'
 import { Flexbox, Typography } from 'components'
 import { StyledGradientText } from 'components'
 import { theme } from 'theme'

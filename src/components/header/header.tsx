@@ -1,4 +1,4 @@
-import logo from 'assets/images/brand.svg'
+import logo from '/assets/images/brand.svg'
 import { Button } from 'components'
 import { useEffect, useState } from 'react'
 import { StyledHeaderWrapper, StyledNavbarDesktopWrapper } from './styles'

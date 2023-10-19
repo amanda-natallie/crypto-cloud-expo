@@ -2,73 +2,73 @@
   {
     "id": 1,
     "speaker": "Sunny Lu",
-    "image": "./src/assets/speakers/1)Sunny-Lu.png",
+    "image": "assets/speakers/sunny-lu.png",
     "specialist": "Vechain"
   },
   {
     "id": 2,
     "speaker": "Helen Hai",
-    "image": "./src/assets/speakers/2)Helen-Hai.png",
+    "image": "assets/speakers/helen-hai.png",
     "specialist": "Binance"
   },
   {
     "id": 3,
     "speaker": "Alex Zinder",
-    "image": "./src/assets/speakers/3)Alex-Zinder.png",
+    "image": "assets/speakers/alex-zinder.png",
     "specialist": "Legder Enterprise"
   },
   {
     "id": 4,
     "speaker": "Gracy Chen",
-    "image": "./src/assets/speakers/4)Gracy-Chen.png",
+    "image": "assets/speakers/gracy-chen.png",
     "specialist": "BitGet"
   },
   {
     "id": 5,
     "speaker": "Mohammed Al Blooshi",
-    "image": "./src/assets/speakers/5)Mohammed-Alblooshi.png",
+    "image": "assets/speakers/mohammed-alblooshi.png",
     "specialist": "Dubai International"
   },
   {
     "id": 6,
     "speaker": "Max Kordek",
-    "image": "./src/assets/speakers/6)Max-Kordek.png",
+    "image": "assets/speakers/max-kordek.png",
     "specialist": "Lisk"
   },
   {
     "id": 7,
     "speaker": "Nena Dokuzov",
-    "image": "./src/assets/speakers/7)Nena-Dokuzov.png",
+    "image": "assets/speakers/nena-dokuzov.png",
     "specialist": "Alserkal Group"
   },
   {
     "id": 8,
     "speaker": "Reece Merrick",
-    "image": "./src/assets/speakers/8)Reece-Merrick.png",
+    "image": "assets/speakers/reece-merrick.png",
     "specialist": "Ripple"
   },
   {
     "id": 9,
     "speaker": "Dina Sam'an",
-    "image": "./src/assets/speakers/9)Dina-Sam'an.png",
+    "image": "assets/speakers/dina-saman.png",
     "specialist": "CoinMENA"
   },
   {
     "id": 10,
     "speaker": "Jean Charles Gaudechon",
-    "image": "./src/assets/speakers/10)Jean-Charles-Gaudechon.png",
+    "image": "assets/speakers/jean-charles-gaudechon.png",
     "specialist": "OneFootball Labs"
   },
   {
     "id": 11,
     "speaker": "Nicole Purim",
-    "image": "./src/assets/speakers/11)Nicole-Purin.png",
+    "image": "assets/speakers/nicole-purin.png",
     "specialist": "OKX"
   },
   {
     "id": 12,
     "speaker": "Jason Aleggrante",
-    "image": "./src/assets/speakers/12)Jason-Allegrante.png",
+    "image": "assets/speakers/jason-allegrante.png",
     "specialist": "Fireblocks"
   }
 ]

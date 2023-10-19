@@ -1,6 +1,6 @@
 import { Container, Flexbox, StyledGradientText, Typography } from 'components'
 import { theme } from '../../theme'
-import iconBrand from '../../assets/Icons/Brand.svg'
+import iconBrand from '/assets/icons/Brand.svg'
 import { Form, Button, Input, StyledRegisterSectionWrapper } from './styles'
 import { useState } from 'react'
 import axios from 'axios'

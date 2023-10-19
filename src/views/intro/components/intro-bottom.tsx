@@ -1,4 +1,4 @@
-import mapMarker from 'assets/icons/map-marker.svg'
+import mapMarker from '/assets/icons/map-marker.svg'
 import { Flexbox, StyledGradientText, Typography } from 'components'
 import Fade from 'react-reveal/Fade'
 import { theme } from 'theme'

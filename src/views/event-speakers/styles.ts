@@ -1,6 +1,6 @@
 import { Flexbox } from 'components'
 import styled from 'styled-components'
-import bg from 'assets/speakers/shape-bg.svg'
+import bg from '/assets/speakers/shape-bg.svg'
 
 export const StyledSpeakerBlock = styled(Flexbox)`
   position: relative;
